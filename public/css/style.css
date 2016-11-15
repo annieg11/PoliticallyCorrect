@@ -1,0 +1,22 @@
+.navbar-default{
+  padding:10.5px;
+  margin-bottom:20px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p{
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.well{
+  text-align:center;
+}
+
+#logo{
+  position:relative;
+  left:-15px;
+}
