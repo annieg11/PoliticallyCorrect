@@ -14,7 +14,7 @@ Easy access to information regarding all local and state representatives. App al
 
 ## Getting Started
 
-heroku link: https://virtualbookshelf.herokuapp.com/
+heroku link: 
 
 ### Prerequisities
 
@@ -46,7 +46,7 @@ heroku link: https://virtualbookshelf.herokuapp.com/
 *  **Annie G** - ** - [Annie](https://github.com/annieg11)
 *  **Donald No** - ** - [Donald](https://github.com/dln5057)
 *  **Muhammet A** - ** - [Muhammet](https://github.com/muhammeta7)
-*  **Meredith** - ** - [Meredith](https://github.com/StefanieDing)
+*  **Meredith** - ** - [Meredith]()
 
 ## Acknowledgments
 
