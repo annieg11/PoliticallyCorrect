@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Representative = sequelize.define('Representative', {
+  var Representatives = sequelize.define('Representatives', {
     name: DataTypes.STRING,
     partyName: DataTypes.STRING,
     districtNum: DataTypes.INTEGER,
@@ -13,5 +13,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return Representative;
+  return Representatives;
 };

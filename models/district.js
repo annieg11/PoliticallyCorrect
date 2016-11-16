@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var District = sequelize.define('District', {
+  var Districts = sequelize.define('Districts', {
     districtNum: DataTypes.INTEGER,
     zipCode: DataTypes.INTEGER
   }, {
@@ -10,5 +10,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return District;
+  return Districts;
 };
