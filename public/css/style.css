@@ -18,5 +18,9 @@ p{
 
 #logo{
   position:relative;
-  left:-15px;
+  left:-55px;
+}
+
+.panel-title{
+  text-align:center;
 }
