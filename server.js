@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
-// 
+// method override 
 app.use(methodOverride('_method'));
 
 var exphbs = require('express-handlebars');
