@@ -44,7 +44,7 @@ heroku link:
 ## Authors
 
 *  **Annie G** - ** - [Annie](https://github.com/annieg11)
-*  **Donald No** - ** - [Donald](https://github.com/dln5057)
+*  **Donald N** - ** - [Donald](https://github.com/dln5057)
 *  **Muhammet A** - ** - [Muhammet](https://github.com/muhammeta7)
 *  **Meredith** - ** - [Meredith]()
 
