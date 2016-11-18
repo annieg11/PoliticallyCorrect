@@ -1,7 +1,7 @@
 {
   "name": "politically-correct",
   "version": "1.0.0",
-  "description": "App to know your about county representativ.e",
+  "description": "App to know your about county representative",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.2",
