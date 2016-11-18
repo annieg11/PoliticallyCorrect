@@ -1,6 +1,6 @@
 SELECT * from PoliticallyCorrect_db;
 
-INSERT INTO Representatives(name,partyName,districtNum,phoneNum,url, createdAt, updatedAt)
+INSERT INTO Representatives(name,party,districtNum,phoneNum,url, createdAt, updatedAt)
 VALUES ("Donald Norcross","Democrat",1,8564277000,"https://norcross.house.gov",NOW(), NOW()),
         ("Frank LoBiondo"," Republican",2,2022256572,"http://lobiondo.house.gov",NOW(), NOW()),
         ("Tom MacArthur","Republican",3,2022254765,"https://macarthur.house.gov",NOW(), NOW()),
@@ -65,7 +65,7 @@ VALUES(1,08002,NOW(), NOW()),
        (12,08512,NOW(), NOW()),
        (12,08528,NOW(), NOW()),
        (12,08534,NOW(), NOW()),
-       (12,08536,NOW(), NOW()),
+       (12,08536,NOW(), NOW())
        
 
 

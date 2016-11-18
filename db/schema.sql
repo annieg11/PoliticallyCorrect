@@ -6,7 +6,7 @@ USE  PoliticallyCorrect_db;
 CREATE table Representatives(
 id INT AUTO_INCREMENT NOT NULL,
 name VARCHAR(200) NOT NULL,
-partyName VARCHAR(200) NOT NULL,
+party VARCHAR(200) NOT NULL,
 districtNum INTEGER NOT NULL,
 phoneNum INTEGER NOT NULL ,
 url VARCHAR(2063) NOT NULL, 
