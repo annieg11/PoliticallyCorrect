@@ -1,1 +1,22 @@
 {{!-- form of the user input goes here --}}
+<div class="row">
+
+  <div class="col-sm-6">
+
+    <div class="panel panel-primary text-center">
+      <div class="panel-heading"><h4>Rep List</h4></div>
+        <div class="panel-body">
+
+          <div class="row1">
+
+            <div class="col-md-7" style='text-align: left;'>
+
+              {{#each repList}}
+                  <p>ID: {{this.id}} | Rep Name: {{this.name}}</p>
+              {{/each}}
+
+            </div>
+
+        </div>
+    </div>
+  </div>

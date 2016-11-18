@@ -2,8 +2,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var models = require('./models');
 
+var Representative = require('./models')['Representative']
+Representative.sync();
 
 var app = express(); 
 //Serve static content for the app from the "public" directory in the application directory.
@@ -21,8 +22,8 @@ app.set('view engine', 'handlebars');
 
 
 // Require Routes here
-// var routes = require('./controllers/rep_controller.js');
-// app.use('/', routes);
+var routes = require('./controllers/representative_controller.js');
+app.use('/', routes);
 
 var port = 3000;
 app.listen(port, function() {
