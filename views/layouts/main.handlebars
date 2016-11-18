@@ -4,79 +4,43 @@
   <meta charset="UTF-8">
   <title>Politically Correct</title>
 
-    <!-- {{CDN & CSS Links}} -->
-     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link rel="stylesheet" href="../../public/css/style.css">
-     <script src="https://use.fontawesome.com/375a6dc6a2.js"></script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    
+    <script src="https://use.fontawesome.com/375a6dc6a2.js"></script>
 
 </head>
 <body>
 
   <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="Navrow">
+    <div class="row">
 
-      
-      <div class='col-sm-2'>
-        <img src='../public/images/LOGO.png' alt='No Img' id='logo'>
-      </div>
-
-      <div class='col-sm-10'>
+      <div class='col-sm-12'>
         <div class="row">
 
-          <div class="col-md-3 well well-sm">
-          <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-info-circle" aria-hidden="true"></i>About Us</button>
-              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    {{!-- !-- About section --> --}}
-                  </div>
-                </div>
-              </div>
+          <div class="col-sm-3 well well-sm">
+            <a href="#aboutModal" role="button" class="btn btn-lg btn-info" data-toggle="modal"><i class="fa fa-info-circle" aria-hidden="true"></i>About Us</a>
           </div>
-            
-          <div class="col-md-3 well well-sm">
-             <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign Up</button>
-              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <!-- Form with Sign Up info -->
-                  </div>
-                </div>
-              </div>
+          <div class="col-sm-3 well well-sm">
+            <a href="#signModal" role="button" class="btn btn-lg btn-success" data-toggle="modal"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign Up</a>
           </div>
-          
-          <div class="col-md-3 well well-sm">
-            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-users" aria-hidden="true"></i>Login</button>
-              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <!-- Login Modal -->
-                  </div>
-                </div>
-              </div>
+          <div class="col-sm-3 well well-sm">
+            <a href="#loginModal" role="button" class="btn btn-lg btn-primary" data-toggle="modal"><i class="fa fa-users" aria-hidden="true"></i>Login</a>
           </div>
-
           <div class="col-md-3 well well-sm">
-            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-building-o" aria-hidden="true"></i>Contact Us</button>
-              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    nothing in here
-                  </div>
-                </div>
-              </div>
+            <a href="#contactModal" role="button" class="btn btn-lg btn-info" data-toggle="modal"><i class="fa fa-address-book-o" aria-hidden="true"></i>Contact Us</a>
           </div>
 
         </div>
       </div>
-
+      
       <div class='col-sm-12'>
         <div class="row">
           <div class='col-sm-4'></div>
           <div class='col-sm-6'>
-            <img src='../public/images/LOGO.png' alt='No Img' id='logo'>
+            <img src='/public/images/LOGO.png' alt='No Img' id='logo'>
           </div>
           <div class='col-sm-2'></div>
         </div>
@@ -85,105 +49,281 @@
     </div>
   </div>
   </nav>
-    
 
+  
 
-  {{!-- Dynamic content Rendered Here --}}
+  {{! Dynamic content Rendered Here }}
   <div class="container">
     {{{body}}}
   </div>
   
-    <!--Footer-->
+  <!-- <-Footer--> 
   <footer class="footer navbar-fixed-bottom">
 
     <!--Footer Links-->
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid well">
+        <div class="row">
 
-          <div class="col-md-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title">Our Mission</h3>
-              </div>
-              
-              <div class="panel-body">
-                <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Our Mission</h3>
+                </div>
                 
-                <p class="mission">We want to make it simpler for everyone to get the facts on all of their local and federal representatives. Create a login and find out more about the people who make our laws.</p>
+                <div class="panel-body">
+                  <div class="row">
                   
-                </div>
-              </div>
-
-            </div>
-          </div>
-        
-         <div class="col-md-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title">Contact Us</h3>
-              </div>
-
-              <!-- Links to Company e-mail and phone number -->
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-2"></div>
-                  <div class="col-md-4">
-                    <a href='#'><i class="fa fa-5x fa-phone" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="col-md-2"></div>
-                  <div class="col-md-4">
-                    <a href='#'><i class="fa fa-5x fa-envelope-open" aria-hidden="true"></i></a>
+                  <p class="mission">We want to make it simpler for everyone to get the facts on all of their local and federal representatives. Create a login and find out more about the people who make our laws.</p>
+                    
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
-          </div>
           
-          <div class="col-md-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title">Links</h3>
-              </div>
-              
-              <div class="panel-body">
-                <div class="row">
-                  
-                  <div class="col-md-2"></div>
-                  <div class="col-md-4">
-                    <a href='https://github.com/annieg11/PoliticallyCorrect'><i class="fa fa-5x fa-github" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="col-md-2"></div>
-                  <div class="col-md-4">
-                    <a href='#'><i class="fa fa-5x fa-home" aria-hidden="true"></i></a>
-                  </div>
-                
+           <div class="col-sm-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Contact Us</h3>
                 </div>
-              </div>
 
+                <!-- Links to Company e-mail and phone number -->
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                      <a href='#'><i class="fa  fa-3x fa-phone" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                      <a href='#'><i class="fa fa-3x fa-envelope-open" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-          </div>
-     
-      </div>
-    </div>
-    
-    <!--Copyright-->
-    <div class="row">
-   
-      <div class="col-md-12">
-        <div class="well well-sm copyright">
-          © 2016 Copyright: Politically Correct Inc.
+            
+            <div class="col-sm-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Links</h3>
+                </div>
+                
+                <div class="panel-body">
+                  <div class="row">
+                    
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                      <a href='https://github.com/annieg11/PoliticallyCorrect'><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                      <a href='#'><i class="fa fa-3x fa-home" aria-hidden="true"></i></a>
+                    </div>
+                  
+                  </div>
+                </div>
+
+              </div>
+            </div>
+       
         </div>
       </div>
+    
+      <!--Copyright-->
+      <div class="row">
+     
+        <div class="col-md-12">
+          <div class="well well-sm copyright">
+            © 2016 Copyright: Politically Correct Inc.
+          </div>
+        </div>
 
-    </div>
-
+      </div>
   </footer>
 
+  <!-- Modals -->
 
+  <!-- About Modal -->
+  <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modalHeader">About Us</h3>
+        </div>
+        <div class="modal-body">
+          <div class='row'>
+            <div class="col-sm-12 well well-sm">
+              <p class="modalText">When it comes to the world of politics, the statements and information we generally recieve are largely opinion based. Here at Politically Correct, we do not feel comfortable sleeping at night with that idea. We want our users to have easy access to all their local and state represetatives. Once a user creates an account, the information will be rendered on the page based off their location. The information will be the following: </p>
+            </div>
+            <div class="col-sm-12 well well-sm">
+              <h4>Freedom to Learn</h4>
+              <img src='public/images/background.jpg' alt='No Img' id='aboutImg'>
+            </div>
+            <div class="col-sm-12 well">
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                  <button class="btn btn-lg btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+                <div class="col-sm-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign up Modal -->
+  <div id="signModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modalHeader">Sign Up</h3>
+        </div>
+        <div class="modal-body">
+          <div class='row'>
+            <div class="col-sm-12 well">
+              <form class="create-update-form" action="burgers/create" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="user" placeholder="Jane Doe"/>
+                </div>
+                 <div class="form-group">
+                  <label for="zipcode">Zip Code</label>
+                    <input type="text" class="form-control" id="zipcode" placeholder="00000"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="user@mail.com"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password"/>
+                </div>
+                <div class="col-sm-12 well">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-lg btn-success" id="newUserBtn">Create User</button>
+                  </div>
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>   
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modalHeader">Login</h3>
+        </div>
+        <div class="modal-body">
+          <div class='row'>
+            <div class="col-sm-12 well">
+              <form role="form">
+                <div class="form-group">
+                  <label for="userEmail">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="Enter email"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password"/>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"/>Remember Me</label>
+                </div>
+                <div class="col-sm-12 well">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-lg btn-success" id="loginBtn">Login</button>
+                  </div>
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>   
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modalHeader">Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <div class='row'>
+            <div class="col-sm-12 well">
+              <div class="row">
+                <div class="col-sm-4">
+                  <a href='https://github.com/annieg11/PoliticallyCorrect' target="_blank"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href='#'><i class="fa  fa-3x fa-phone" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href='#'><i class="fa fa-3x fa-envelope-open" aria-hidden="true"></i></a>
+                </div>
+              </div>  
+            </div>
+            <div class="col-sm-12 well well-sm">
+              <img src='public/images/contact.jpg' alt='No Img'>
+            </div>
+            <div class="col-sm-12 well">
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                  <button class="btn btn-lg btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+                <div class="col-sm-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+   
+
+   
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
- 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
+
 </body>
 </html>
