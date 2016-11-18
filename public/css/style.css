@@ -1,14 +1,14 @@
 .navbar-default{
-  padding:10.5px;
-  margin-bottom:20px;
+  padding: 10.5px;
+  margin-bottom: 20px;
 }
 
 h5 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p{
-  padding-left:10px;
+  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -16,19 +16,41 @@ p{
   text-align:center;
 }
 
+/*Images*/
 #logo{
-  position:relative;
-  left:-55px;
+  position: relative;
+  left: -55px;
 }
 
+#aboutImg{
+  height: 200px;
+  width: 200px;
+}
+
+
 .panel-title{
-  text-align:center;
+  text-align: center;
 }
 
 .mission{
-  text-align:left;
+  text-align: left;
 }
 
 .copyright{
   text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+
+/*Modals*/
+.modalHeader{
+  text-align: center;
+}
+.modalText{
+  text-align: left;
+}
+
+.form-group, .checkbox {
+  text-align: left;
 }
