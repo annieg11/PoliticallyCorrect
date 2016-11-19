@@ -1,18 +1,18 @@
 SELECT * from PoliticallyCorrect_db;
 
 INSERT INTO Representatives(name,party,districtNum,phoneNum,url, createdAt, updatedAt)
-VALUES ("Donald Norcross","Democrat",1,8564277000,"https://norcross.house.gov",NOW(), NOW()),
-        ("Frank LoBiondo"," Republican",2,2022256572,"http://lobiondo.house.gov",NOW(), NOW()),
-        ("Tom MacArthur","Republican",3,2022254765,"https://macarthur.house.gov",NOW(), NOW()),
-        (" Christopher “Chris” Smith","Republican",4,6095857878,"http://chrissmith.house.gov",NOW(), NOW()),
-        ("Scott Garrett","Republican",5,9733002000,"http://garrett.house.gov",NOW(), NOW()),
-        ("Frank Pallone Jr.","Democrat",6,7322498892,"https://pallone.house.gov",NOW(), NOW()),
-        ("Leonard Lance","Republican",7,9087886900,"http://lance.house.gov",NOW(), NOW()),
-        ("Rep. Albio Sires","Democrat",8,2013090301,"http://sires.house.gov",NOW(), NOW()),
-        ("Bill Pascrell Jr.","Democrat",9,2019352248,"http://pascrell.house.gov",NOW(), NOW()),
-        ("Donald Payne Jr.","Democrat",10,2013690392,"http://payne.house.gov",NOW(), NOW()),
-        ("Rodney Frelinghuysen","Republican",11,9739840711,"https://frelinghuysen.house.gov",NOW(), NOW()),
-        ("Bonnie Watson Coleman","Democrat",12,6098830026,"https://watsoncoleman.house.gov",NOW(), NOW())
+VALUES ("Donald Norcross","Democrat",1,"8564277000","https://norcross.house.gov",NOW(), NOW()),
+        ("Frank LoBiondo"," Republican",2,"2022256572","http://lobiondo.house.gov",NOW(), NOW()),
+        ("Tom MacArthur","Republican",3,"2022254765","https://macarthur.house.gov",NOW(), NOW()),
+        (" Christopher “Chris” Smith","Republican",4,"6095857878","http://chrissmith.house.gov",NOW(), NOW()),
+        ("Scott Garrett","Republican",5,"9733002000","http://garrett.house.gov",NOW(), NOW()),
+        ("Frank Pallone Jr.","Democrat",6,"7322498892","https://pallone.house.gov",NOW(), NOW()),
+        ("Leonard Lance","Republican",7,"9087886900","http://lance.house.gov",NOW(), NOW()),
+        ("Rep. Albio Sires","Democrat",8,"2013090301","http://sires.house.gov",NOW(), NOW()),
+        ("Bill Pascrell Jr.","Democrat",9,"2019352248","http://pascrell.house.gov",NOW(), NOW()),
+        ("Donald Payne Jr.","Democrat",10,"2013690392","http://payne.house.gov",NOW(), NOW()),
+        ("Rodney Frelinghuysen","Republican",11,"9739840711","https://frelinghuysen.house.gov",NOW(), NOW()),
+        ("Bonnie Watson Coleman","Democrat",12,"6098830026","https://watsoncoleman.house.gov",NOW(), NOW())
 
 
 
