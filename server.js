@@ -22,7 +22,7 @@ app.set('view engine', 'handlebars');
 
 
 // Require Routes here
-var routes = require('./controllers/representative_controller.js');
+var routes = require('./controllers/app_controller.js');
 app.use('/', routes);
 
 var port = 3000;
