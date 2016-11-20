@@ -1,1 +1,48 @@
-{{!-- form of the user input goes here --}}
+{{!-- Sign-Up partial --}}
+ <div id="signModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modalHeader">Sign Up</h3>
+        </div>
+        <div class="modal-body">
+          <div class='row'>
+            <div class="col-sm-12 well">
+              <form class="create-update-form" action="user/create" method="POST">
+                <div class="form-group">
+                  <label for="name" name="name">Full Name</label>
+                    <input type="text" class="form-control" id="user" placeholder="Jane Doe"/>
+                </div>
+                 <div class="form-group">
+                  <label for="zipcode">Zip Code</label>
+                    <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="00000"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="user@mail.com"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
+                </div>
+                <div class="col-sm-12 well">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-lg btn-success" id="newUserBtn">Create User</button>
+                  </div>
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-lg btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>   
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>

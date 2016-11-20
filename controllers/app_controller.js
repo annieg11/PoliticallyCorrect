@@ -21,7 +21,6 @@ router.get('/index', function(req,res) {
 });
 
 // router.post('/user/create', function(req, res) {
-
 //   var newUser = req.body;
 //   User.create ({
 //     name: newUser.name,
@@ -31,6 +30,9 @@ router.get('/index', function(req,res) {
 //   });
 //   res.redirect('/'); 
 // });
+
+
+
 
   
 module.exports = router; 
