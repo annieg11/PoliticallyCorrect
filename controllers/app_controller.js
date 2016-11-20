@@ -1,6 +1,7 @@
 
 // create,update,delete-CRUD functions
 var Representative  = require('../models')['Representative'];
+var models = require('../models')
 var express = require('express');
 var router  = express.Router();
 
@@ -31,6 +32,20 @@ router.get('/index', function(req,res) {
 //   });
 //   res.redirect('/'); 
 // });
+
+router.get('/:zipCode', function(req,res){
+  var zip = req.params.zipCode;
+  console.log(zip + "hereeeeee")
+  models.Districts.findOne({where: {zipCode:zip }})
+  .then(function(rep){
+    console.log(rep.districtNum)
+    models.Representative.findOne({where: {districtNum:rep.districtNum }})
+    .then(function(response){
+      res.json(response)
+    })
+    // res.json(rep)
+  })
+})
 
   
 module.exports = router; 
