@@ -54,3 +54,12 @@ p{
 .form-group, .checkbox {
   text-align: left;
 }
+
+  #footer{
+
+        bottom: -50px;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        right: 0;
+         }
