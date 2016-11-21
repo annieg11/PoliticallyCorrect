@@ -4,6 +4,8 @@ module.exports = function(sequelize, DataTypes) {
     districtNum: DataTypes.INTEGER,
     zipCode: DataTypes.INTEGER
   }, {
+      timestamps: false
+  }, {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
