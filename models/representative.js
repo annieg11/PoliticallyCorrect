@@ -12,8 +12,16 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
+        Representative.hasMany(models.Districts);
       }
     }
+
+     representative.hook('afterCreate',function(representative,option){
+      representative.image = function createImageReference(name){
+        representative.name.replace(/\s+/g, '').toLowerCase();
+      }
+
+    })
   });
   return Representative;
 };
