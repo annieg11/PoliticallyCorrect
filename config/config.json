@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "B8t@skeR",
     "database": "PoliticallyCorrect_db",
     "host": "localhost",
     "dialect": "mysql"
