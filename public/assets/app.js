@@ -26,11 +26,11 @@ $('#zipSubmit').on('click', function() {
       var yourRep = [];
       yourRep.push(response);
       $('.rep-name').html(response.name);
-      $('.rep-url').html(response.url);
       $('.rep-party').html(response.party);
-      $('.rep-districtNum').html(response.districtNum);
+      $('.rep-districtNum').html('District Number: ' + response.districtNum);
       $('.rep-image').attr('src', '/images/'+response.image);
-      $('.rep-phoneNum').html(response.phoneNum);
+      $('.rep-phoneNum').html('Phone Number: ' + response.phoneNum);
+      $('.rep-url').html(response.url);
     })
   }
 });
