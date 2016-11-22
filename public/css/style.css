@@ -1,8 +1,29 @@
-.navbar-default{
+body{
+  background-image:url('../images/ripples.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  max-height: 100%;
+/* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+/*.navbar-default{
   padding: 10.5px;
   margin-bottom: 20px;
+}*/
+.page-header{
+  font-size:50px;
 }
 
+h1{
+  background-color: #fff;
+  text-align: center;
+  font-size: 100px;
+  background: rgba(204, 204, 204, 0.5);
+}
 h5 {
   font-size: 20px;
 }
