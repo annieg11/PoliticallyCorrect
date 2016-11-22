@@ -9,7 +9,8 @@ name VARCHAR(200) NOT NULL,
 party VARCHAR(200) NOT NULL,
 districtNum INTEGER NOT NULL,
 phoneNum VARCHAR(200) NOT NULL ,
-url VARCHAR(2063) NOT NULL, 
+url VARCHAR(2063) NOT NULL,
+image VARCHAR(2063) NOT NULL,
 primary key(id)
 );
 

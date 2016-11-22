@@ -1,6 +1,6 @@
 SELECT * from PoliticallyCorrect_db;
 
-INSERT INTO Representatives(name,party,districtNum,phoneNum,url)
+INSERT INTO Representatives(name,party,districtNum,phoneNum,url,image)
 VALUES ("Donald Norcross","Democrat",1,"8564277000","https://norcross.house.gov","donaldnor.jpg"),
         ("Frank LoBiondo"," Republican",2,"2022256572","http://lobiondo.house.gov","franklobindo.jpg"),
         ("Tom MacArthur","Republican",3,"2022254765","https://macarthur.house.gov", "tommacarthur.jpg"),
