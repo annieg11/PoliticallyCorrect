@@ -47,6 +47,15 @@ router.get('/:zipCode', function(req,res){
   })
 })
 
+// router.get('/rep/:zipcode', function(req,res) {
+//   Representative.findAll({})
+//     .then(function(result){
+//       var repObject = {repList: result};
+//       console.log(repObject);
+//       res.render('index', repObject);
+//     }); 
+// });
+
   
 module.exports = router; 
 
