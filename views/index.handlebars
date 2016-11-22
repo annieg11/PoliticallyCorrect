@@ -1,32 +1,26 @@
 {{!-- Zipcode Search Bar --}}
 
 <div class="row">
-
   <div class="col-sm-3"></div>
   <div class="col-sm-6">
     <div class="panel panel-primary text-center">
       <div class="panel-heading"><h4>Search NJ Zipcode Now</h4></div>
-        <div class="panel-body">
-
-          <form class="create-update-form" action="burgers/create" method="POST">
-            <div class="form-group">
-              <label for="zipcode">ZipCode:</label>
-              <input type="text" id="burgerName" name="burgerName">
-              <button type="submit"  class="btn btn-lg btn-success">Search</button>
-            </div>
-          </form>
-
-        </div>
+      <div class="panel-body">
+        <form class="create-update-form" action="representative/create" method="POST">
+          <div class="form-group">
+            <label for="zipcode">ZipCode:</label>
+            <input type="text" id="zipcode" name="zipcode">
+            <button type="submit"  class="btn btn-lg btn-success">Search</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
-  <div class="col-sm-3"></div>
+  <div class="col-md-3"></div>
 </div>
 
 
-
 <div class="row">
-
   <div class="col-sm-6">
 
     <div class="panel panel-primary text-center">
@@ -34,7 +28,6 @@
         <div class="panel-body">
 
           <div class="row1">
-
             <div class="col-md-7" style='text-align: left;'>
 
               {{#each repList}}
@@ -42,7 +35,8 @@
               {{/each}}
 
             </div>
+          </div>
 
-        </div>
     </div>
   </div>
+</div>
