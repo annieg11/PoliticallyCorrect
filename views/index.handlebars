@@ -10,7 +10,7 @@
           <div class="form-group">
             <label for="zipcode">ZipCode:</label>
             <input type="text" id="zipcode" name="zipcode">
-            <button type="submit"  id="zipSubmit" class="btn btn-lg btn-success">Search</button>
+            <button type="button" id="zipSubmit" class="btn btn-lg btn-success">Search</button>
           </div>
         </form>
       </div>
@@ -30,6 +30,27 @@
             <div class="col-md-7" style='text-align: left;'>
 
               {{#each repList}}
+                  <p>ID: {{this.id}} | Rep Name: {{this.name}}</p>
+              {{/each}}
+
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+
+    <div class="panel panel-primary text-center">
+      <div class="panel-heading"><h4>Your Representative</h4></div>
+        <div class="panel-body">
+
+          <div class="row1">
+            <div class="col-md-7" style='text-align: left;'>
+
+              {{#each yourRep}}
                   <p>ID: {{this.id}} | Rep Name: {{this.name}}</p>
               {{/each}}
 
