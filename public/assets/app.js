@@ -15,7 +15,7 @@ function checkZipCode(zipCodeToSearch){
 }
 
 $('#zipSubmit').on('click', function() {
-//obtain zip code
+  //obtain zip code
   zipCodeToSearch = parseInt($('#zipcode').val().trim());
   //Verify the zip code is a 5 digit numeric value before proceeding
   if (isNaN(zipCodeToSearch) == false && zipCodeToSearch > 0) {
@@ -24,9 +24,10 @@ $('#zipSubmit').on('click', function() {
       method: 'GET'
     }).done(function(response) {
       console.log(response);
-    //obtain search term
-    // repToSearch = $('#replist').val().trim();
-  } 
+      var yourRep = [];
+      yourRep.push(response);
+    })
+  }
 });
 
 
