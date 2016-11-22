@@ -2,12 +2,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+require('dotenv').config();
 
-// Require Reps Model
 var Representative = require('./models')['Representative']
 Representative.sync();
 
-// Require User Model
 var User = require('./models')['User']
 User.sync();
 
@@ -21,16 +20,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 var exphbs = require('express-handlebars');
-app.engine('handlebars', exphbs({defaultLayout: 'main'})); 
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-
-
 
 // Require Routes here
 var routes = require('./controllers/app_controller.js');
 app.use('/', routes);
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('App listening on PORT: ' + port);
 });
