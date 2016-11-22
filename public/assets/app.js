@@ -1,7 +1,5 @@
 //Initialize variables
 var zipCodeToSearch;
-var repToSearch;
-var displayImages = [""];
 
 function checkZipCode(zipCodeToSearch){
   if (zipCodeToSearch.length == 5) {
@@ -19,6 +17,7 @@ $('#zipSubmit').on('click', function() {
   zipCodeToSearch = parseInt($('#zipcode').val().trim());
   //Verify the zip code is a 5 digit numeric value before proceeding
   if (isNaN(zipCodeToSearch) == false && zipCodeToSearch > 0) {
+    // Making an ajax request to get the response.
     $.ajax({
       url: '/' + zipCodeToSearch,
       method: 'GET'
@@ -26,6 +25,12 @@ $('#zipSubmit').on('click', function() {
       console.log(response);
       var yourRep = [];
       yourRep.push(response);
+      $('.rep-name').html(response.name);
+      $('.rep-url').html(response.url);
+      $('.rep-party').html(response.party);
+      $('.rep-districtNum').html(response.districtNum);
+      $('.rep-image').attr('src', '/images/'+response.image);
+      $('.rep-phoneNum').html(response.phoneNum);
     })
   }
 });
