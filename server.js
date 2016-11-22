@@ -3,9 +3,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
+// Require Reps Model
 var Representative = require('./models')['Representative']
 Representative.sync();
 
+// Require User Model
 var User = require('./models')['User']
 User.sync();
 
@@ -19,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 var exphbs = require('express-handlebars');
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'})); 
 app.set('view engine', 'handlebars');
 
 
