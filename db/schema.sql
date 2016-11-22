@@ -26,7 +26,7 @@ USE  PoliticallyCorrect_db;
 
 CREATE table User(
 id INT AUTO_INCREMENT NOT NULL,
-name VARCHAR(200) NOT NULL,
+userName VARCHAR(200) NOT NULL,
 zipcode INTEGER NOT NULL,
 email VARCHAR(255) NOT NULL,
 password VARCHAR(255) NOT NULL,
