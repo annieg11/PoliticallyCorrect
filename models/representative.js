@@ -16,7 +16,6 @@ module.exports = function(sequelize, DataTypes) {
         Representative.hasMany(models.Districts);
       }
     }
-
     //  representative.hook('afterCreate',function(representative,option){
     //   representative.image = function createImageReference(name){
     //     representative.name.replace(/\s+/g, '').toLowerCase();
