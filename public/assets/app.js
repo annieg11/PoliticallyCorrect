@@ -32,7 +32,7 @@ $('#zipSubmit').on('click', function() {
       $('.rep-image').attr('src', '/images/'+response.image);
       $('.rep-phoneNum').html('Phone Number: ' + response.phoneNum);
       $('.rep-url').attr('href', response.url);
-      // console.log(response.url);
+       console.log(response.url);
     })
   }
 });
