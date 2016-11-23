@@ -19,7 +19,7 @@ USE  PoliticallyCorrect_db;
 CREATE table Districts (
 id INT AUTO_INCREMENT NOT NULL,
 districtNum INTEGER NOT NULL,
-zipCode INTEGER NOT NULL,
+zipCode VARCHAR(20) NOT NULL,
 primary key(id)
 );
 

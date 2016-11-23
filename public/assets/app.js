@@ -13,6 +13,7 @@ function checkZipCode(zipCodeToSearch){
 }
 
 $('#zipSubmit').on('click', function() {
+
   //obtain zip code
   zipCodeToSearch = parseInt($('#zipcode').val().trim());
   //Verify the zip code is a 5 digit numeric value before proceeding
@@ -30,7 +31,8 @@ $('#zipSubmit').on('click', function() {
       $('.rep-districtNum').html('District Number: ' + response.districtNum);
       $('.rep-image').attr('src', '/images/'+response.image);
       $('.rep-phoneNum').html('Phone Number: ' + response.phoneNum);
-      $('.rep-url').html(response.url);
+      $('.rep-url').attr('href', response.url);
+      // console.log(response.url);
     })
   }
 });
