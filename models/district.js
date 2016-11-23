@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Districts = sequelize.define('Districts', {
     districtNum: DataTypes.INTEGER,
-    zipCode: DataTypes.STRING
+    zipCode: DataTypes.INTEGER
   }, {
       timestamps: false
   }, {
