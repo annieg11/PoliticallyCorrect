@@ -26,17 +26,16 @@ $('#zipSubmit').on('click', function() {
       console.log(response);
       var yourRep = [];
       yourRep.push(response);
-      $('.rep-name').html(response.name);
-      $('.rep-party').html(response.party);
-      $('.rep-districtNum').html('District Number: ' + response.districtNum);
-      $('.rep-image').attr('src', '/images/'+response.image);
-      $('.rep-phoneNum').html('Phone Number: ' + response.phoneNum);
-      $('.rep-url').attr('href', response.url);
+      $('.repName').html('<h3>' + response.name + '</h3>');
+      $('.repImage').attr('src', '/images/'+response.image);
+      $('.party').html('Party: ' + response.party);
+      $('.districtNum').html('District Number: ' + response.districtNum);
+      $('.phoneNum').html('<i class="fa fa-phone-square" aria-hidden="true"></i>' + '  Phone Number: ' + response.phoneNum);
+      $('.website').attr('href', response.url).html('<i class="fa fa-info" aria-hidden="true"></i>     Website');
        console.log(response.url);
     })
   }
 });
-
 
 
 
