@@ -16,22 +16,26 @@ h4{
 .panel-body{
   font-size:15px;
 }
+
+/*NavBar*/
 .navbar-default  {
     padding-top:0px !important; 
     padding-bottom:10px !important;
-    height: 5px;
-    background: #777;
-}
-
-.navbar {min-height:28px !important;
+    /*height: 45px;*/
+    background: white;
 }
 
 .navbar.navbar-default{
-      background: #777;
+  background: white;
 }
 
 .page-header{
   font-size:50px;
+}
+.navbar-nav{
+  position: relative;
+  right: -60px;
+  font-size: 20px;
 }
 
 h5 {
@@ -43,16 +47,11 @@ p{
   padding-right: 10px;
 }
 
-.well{
-  text-align:center;
-/*  background-color: #777;
-*/}
 
 /*Images*/
-#logo{
+/*#logo{
   position: relative;
-  left: -55px;
-}
+}*/
 
 #aboutImg{
   height: 200px;
@@ -101,3 +100,6 @@ left: 0;
 position: absolute;
 right: 0;
 }
+
+/*Your Rep Styling*/
+
