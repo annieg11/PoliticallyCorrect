@@ -1,11 +1,10 @@
 # PoliticallyCorrect
 
-Easy access to information regarding all local and state representatives. App allows use to sign-in and using the zip code they provided the site will render all of the canidates nearest their location. 
+Easy access to information regarding all local and state representatives. App allows user to sign-in and using the zip code they provided the site will render all of the canidates nearest their location. 
 
 # Screenshots 
 
-![UI]()
-![UI]()
+
 
 ## Technologies used
 
@@ -14,7 +13,7 @@ Easy access to information regarding all local and state representatives. App al
 
 ## Getting Started
 
-heroku link: 
+heroku link: https://politicallycorrect.herokuapp.com/ 
 
 ### Prerequisities
 
@@ -28,10 +27,10 @@ heroku link:
 ## Built With
 
 * Sublime Text - Text editor of choice
-* Bootstrap - Wireframes of choice 
+* Bootstrap - Wireframes of choice, Modals used to simplify design
 * Node - Makes removal and addition of new objects simpler
-* Express Servers - Modals used to simplify design
-* Sequelize
+* Express Servers - 
+* Sequelize - 
 
 ## Walk throughs of code 
 
@@ -46,7 +45,7 @@ heroku link:
 *  **Annie G** - ** - [Annie](https://github.com/annieg11)
 *  **Donald N** - ** - [Donald](https://github.com/dln5057)
 *  **Muhammet A** - ** - [Muhammet](https://github.com/muhammeta7)
-*  **Meredith** - ** - [Meredith]()
+*  **Meredith ** - ** - [Meredith](https://github.com/Meredith-W)
 
 ## Acknowledgments
 
