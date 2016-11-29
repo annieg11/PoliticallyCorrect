@@ -1,5 +1,3 @@
-'use strict';
-
 var fs        = require('fs');
 var path      = require('path');
 var Sequelize = require('sequelize');
@@ -13,11 +11,7 @@ var sequelize;
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
-  sequelize = new Sequelize('PoliticallyCorrect_db', 'root', process.env.DB_PASS, {
-    host: 'localhost',
-    dialect: 'mysql',
-    port: '3306'
-  });
+  sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 fs
   .readdirSync(__dirname)
