@@ -20,7 +20,6 @@ module.exports = function(sequelize, DataTypes) {
     //   representative.image = function createImageReference(name){
     //     representative.name.replace(/\s+/g, '').toLowerCase();
     //   }
-
     // })
   });
   return Representative;

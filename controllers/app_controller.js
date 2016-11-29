@@ -5,6 +5,7 @@ var models = require('../models')
 var express = require('express');
 var router  = express.Router();
 var User  = require('../models')['User'];
+var passport = require("passport");
 
 // Home Page
 router.get('/', function(req, res) {
@@ -21,6 +22,33 @@ router.get('/index', function(req,res) {
     }); 
 });
 
+
+function signInUser(req, res, error, user, info){
+  if(error) { return res.render(error); }
+  if(!user) { return res.render(" not user"); }
+  var userId = user.id;
+  res.redirect('/index');
+}
+
+router.post('/user/login', function(req, res, next) {
+  passport.authenticate('local', function(error, user, info) {
+    signInUser(req, res, error, user, info);
+  })(req, res, next);
+});
+
+router.post('/user/signup', function(req, res, next){
+  console.log(req.body);
+  passport.authenticate('local-signup', function(error, user, info) {
+    // signInUser(req, res, error, user, info);
+  })(req, res, next);
+  res.redirect('/index');
+});
+
+router.get('/user/logout', function(req, res) {
+  req.session.destroy();
+  res.status(200).end();
+});
+
 router.post('/user/create', function(req, res) {
   var newUser = req.body;
   User.create ({
@@ -31,6 +59,7 @@ router.post('/user/create', function(req, res) {
   });
   res.redirect('/'); 
 });;
+
 
 
 router.get('/:zipCode', function(req,res){
