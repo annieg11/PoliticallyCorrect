@@ -39,10 +39,15 @@ passport.use("local", new localStrategy({
       passwordField: 'password'
     },
     function(req, username, password, done){
-      models.user.create({
+      db.User.create({
+        name: req.body.name,
         email: username,
-        password: password
+        password: password,
+        zipcode: req.body.zipcode
       }).then(function(user) {
+        user.userName = req.body.name
+        user.zipcode = parseInt(req.body.zipcode);
+        user.save();
         return done(null, user);
       }).catch(function() {
         return done(null, false);
