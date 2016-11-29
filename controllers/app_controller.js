@@ -33,7 +33,7 @@ router.post('/user/create', function(req, res) {
 });;
 
 
-router.get('/rep/:zipCode', function(req,res){
+router.get('/:zipCode', function(req,res){
   var zip = req.params.zipCode;
   console.log(zip + "hereeeeee")
   models.Districts.findOne({where: {zipCode:zip }})
