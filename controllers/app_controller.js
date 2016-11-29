@@ -22,6 +22,7 @@ router.get('/index', function(req,res) {
     }); 
 });
 
+
 function signInUser(req, res, error, user, info){
   if(error) { return res.render(error); }
   if(!user) { return res.render(" not user"); }
@@ -48,6 +49,18 @@ router.get('/user/logout', function(req, res) {
   res.status(200).end();
 });
 
+router.post('/user/create', function(req, res) {
+  var newUser = req.body;
+  User.create ({
+    userName: newUser.userName,
+    zipcode: newUser.zipcode,
+    email: newUser.email,
+    password: newUser.password
+  });
+  res.redirect('/'); 
+});;
+
+
 
 router.get('/:zipCode', function(req,res){
   var zip = req.params.zipCode;
@@ -62,6 +75,15 @@ router.get('/:zipCode', function(req,res){
     // res.json(rep)
   })
 })
+
+// router.get('/rep/:zipcode', function(req,res) {
+//   Representative.findAll({})
+//     .then(function(result){
+//       var repObject = {repList: result};
+//       console.log(repObject);
+//       res.render('index', repObject);
+//     }); 
+// });
 
   
 module.exports = router; 

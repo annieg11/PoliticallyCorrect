@@ -1,6 +1,41 @@
-.navbar-default{
-  padding: 10.5px;
-  margin-bottom: 20px;
+body{
+  background-image:url('../images/ripples.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  max-height: 100%;
+
+}
+
+h4{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.panel-body{
+  font-size:15px;
+}
+
+/*NavBar*/
+.navbar-default  {
+    padding-top:0px !important; 
+    padding-bottom:10px !important;
+    /*height: 45px;*/
+    background: white;
+}
+
+.navbar.navbar-default{
+  background: white;
+}
+
+.page-header{
+  font-size:50px;
+}
+.navbar-nav{
+  position: relative;
+  right: -60px;
+  font-size: 20px;
 }
 
 h5 {
@@ -12,14 +47,9 @@ p{
   padding-right: 10px;
 }
 
-.well{
-  text-align:center;
-}
-
-/*Images*/
-#logo{
-  position: relative;
-  left: -55px;
+.row{
+  display: block;
+  margin: 0 auto;  
 }
 
 #aboutImg{
@@ -27,10 +57,23 @@ p{
   width: 200px;
 }
 
+.contactImg{
+  display: block;
+  margin: 0 auto;
+}
+.aboutImg{
+  display: block;
+  margin: 0 auto;
+}
+.btn.btn-lg.btn-danger{
+  display: block;
+  margin: 0 auto;
+}
 
 .panel-title{
   text-align: center;
 }
+
 
 .mission{
   text-align: left;
@@ -43,9 +86,13 @@ p{
 }
 
 
-/*Modals*/
+/*Modal Styling*/
 .modalHeader{
   text-align: center;
+  background: ;
+}
+.modalBody {
+
 }
 .modalText{
   text-align: left;
@@ -55,11 +102,18 @@ p{
   text-align: left;
 }
 
-  #footer{
+/*Footer Styling*/
 
-        bottom: -50px;
-        height: 50px;
-        left: 0;
-        position: absolute;
-        right: 0;
-         }
+#footer{
+bottom: -50px;
+height: 50px;
+left: 0;
+position: absolute;
+right: 0;
+}
+
+ #repTable{
+  display:none;
+} 
+/*Your Rep Styling*/
+

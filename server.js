@@ -5,6 +5,9 @@ var methodOverride = require('method-override');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
+var path = require('path');
+require('dotenv').config();
+
 
 var Representative = require('./models')['Representative']
 Representative.sync();
@@ -14,7 +17,7 @@ User.sync();
 
 var app = express(); 
 //Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public/')));
 
 // Support URL-encoded bodies
 app.use(bodyParser.urlencoded({
@@ -41,13 +44,13 @@ var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-
-
 // Require Routes here
 var routes = require('./controllers/app_controller.js');
 app.use('/', routes);
 
-var port = 3000;
+
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('App listening on PORT: ' + port);
 });
+
