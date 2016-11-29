@@ -47,17 +47,28 @@ p{
   padding-right: 10px;
 }
 
-
-/*Images*/
-/*#logo{
-  position: relative;
-}*/
+.row{
+  display: block;
+  margin: 0 auto;  
+}
 
 #aboutImg{
   height: 200px;
   width: 200px;
 }
 
+.contactImg{
+  display: block;
+  margin: 0 auto;
+}
+.aboutImg{
+  display: block;
+  margin: 0 auto;
+}
+.btn.btn-lg.btn-danger{
+  display: block;
+  margin: 0 auto;
+}
 
 .panel-title{
   text-align: center;
