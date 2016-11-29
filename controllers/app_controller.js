@@ -21,16 +21,10 @@ router.get('/index', function(req,res) {
     }); 
 });
 
-// router.post('/user/create', function(req, res) {
-//   var newUser = req.body;
-//   User.create ({
-//     name: newUser.name,
-//     zipcode: newUser.zipcode,
-//     email: newUser.email,
-//     password: newUser.password
-//   });
-//   res.redirect('/'); 
-// });;
+router.post('/loginModal', passport.authenticate ('local', { successRedirect: '/',
+            failureRedirect: '/login',
+            failureFlash: true })
+);
 
 
 router.get('/:zipCode', function(req,res){

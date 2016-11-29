@@ -12,7 +12,20 @@ module.exports = function(sequelize, DataTypes) {
       associate: function(models) {
         // associations can be defined here
       }
+    },
+    instanceMethods : {
+      generateHash : function(password){
+        return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+      },
+      validPassword: function(password){
+        return bcrypt.compareSync(password, this.password)               
+      }
+
     }
   });
+
+  User.hook('beforeCreate', function(user, options){
+    user.password = user.generateHash(user.password);
+  })
   return User;
 };
