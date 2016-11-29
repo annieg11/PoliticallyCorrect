@@ -12,10 +12,10 @@ function checkZipCode(zipCodeToSearch){
   }
 }
 
-$('#zipSubmit').on('click', function() {
- // document.onkeyup.function(){
- // ('#repTable').show();
- // }
+$('#zipSubmit').on('click keypress', function() {
+ 
+  $('#repTable').show();
+
   //obtain zip code
   zipCodeToSearch = parseInt($('#zipcode').val().trim());
   //Verify the zip code is a 5 digit numeric value before proceeding
