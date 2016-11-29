@@ -28,7 +28,9 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/app_controller.js');
 app.use('/', routes);
 
+
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('App listening on PORT: ' + port);
 });
+
