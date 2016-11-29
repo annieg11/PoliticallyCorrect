@@ -33,7 +33,7 @@ passport.use("local", new localStrategy({
   }
 ));
 
- passport.use('local-signup', new LocalStrategy({
+ passport.use('local-signup', new localStrategy({
       passReqToCallback: true,
       usernameField: 'email',
       passwordField: 'password'
