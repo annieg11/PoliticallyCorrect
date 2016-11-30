@@ -29,7 +29,7 @@ $('#zipSubmit').on('click keypress', function() {
       var yourRep = [];
       yourRep.push(response);
       $('.repName').html('<h3>' + response.name + '</h3>');
-      $('.repImage').attr('src', '/images/'+response.image);
+      $('.repImage').attr('src', '/assets/images/'+response.image);
       $('.party').html('Party: ' + response.party);
       $('.districtNum').html('District Number: ' + response.districtNum);
       $('.phoneNum').html('<i class="fa fa-phone-square" aria-hidden="true"></i>' + '  Phone Number: ' + response.phoneNum);
