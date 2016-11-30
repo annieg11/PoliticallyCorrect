@@ -47,10 +47,10 @@ heroku link: https://politicallycorrect.herokuapp.com/
 
 ## Authors
 
-*  **Annie G** Sequelize, Model Creation, Associations ** - [Annie](https://github.com/annieg11)
-*  **Donald N** User Authentication, Controller Routes ** - [Donald](https://github.com/dln5057)
-*  **Muhammet A** Handlebars, Controller Routes, GitHub Workflow ** - [Muhammet](https://github.com/muhammeta7)
-*  **Meredith W** CSS and SEO integration ** - [Meredith](https://github.com/Meredith-W)
+*  **Annie G**  Sequelize, Model Creation, Associations  - [Annie](https://github.com/annieg11)
+*  **Donald N**  User Authentication, Controller Routes  - [Donald](https://github.com/dln5057)
+*  **Muhammet A**  Handlebars, Controller Routes, GitHub Workflow  - [Muhammet](https://github.com/muhammeta7)
+*  **Meredith W**  CSS and SEO integration  - [Meredith](https://github.com/Meredith-W)
 
 ## Acknowledgments
 
