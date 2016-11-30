@@ -1,4 +1,117 @@
 /* style for the landing page and app */
-body{
-  display: none;
+
+body {
+  background-image:url('../images/ripples.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  max-height: 100%;
 }
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.panel-body {
+  font-size:15px;
+}
+
+/*NavBar*/
+.navbar-default  {
+    padding-top:0px !important; 
+    padding-bottom:10px !important;
+    /*height: 45px;*/
+    background: white;
+}
+
+.navbar.navbar-default {
+  background: white;
+}
+
+.page-header {
+  font-size:50px;
+}
+.navbar-nav {
+  position: relative;
+  right: -60px;
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  display: block;
+  margin: 0 auto;  
+}
+
+#aboutImg {
+  height: 200px;
+  width: 200px;
+}
+
+.contactImg {
+  display: block;
+  margin: 0 auto;
+}
+.aboutImg {
+  display: block;
+  margin: 0 auto;
+}
+.btn.btn-lg.btn-danger {
+  display: block;
+  margin: 0 auto;
+}
+
+.panel-title {
+  text-align: center;
+}
+
+
+.mission {
+  text-align: left;
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+
+/*Modal Styling*/
+.modalHeader {
+  text-align: center;
+  background: ;
+}
+.modalBody {
+
+}
+.modalText {
+  text-align: left;
+}
+
+.form-group, .checkbox {
+  text-align: left;
+}
+
+/*Footer Styling*/
+
+#footer {
+  position: relative;
+  bottom: 0;
+}
+
+
+/*Your Rep Styling*/
+#repTable {
+  display:none;
+} 
