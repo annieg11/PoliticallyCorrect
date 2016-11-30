@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-// passport & cookie encryption config
+// passport & cookie encryption config 
 require('./config/passport')(app);
 app.use(cookieParser("Iamsecret"));
 app.use(session({
