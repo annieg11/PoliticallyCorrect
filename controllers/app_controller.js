@@ -17,13 +17,14 @@ router.get('/index', function(req,res) {
   Representative.findAll({})
     .then(function(result){
       var repObject = {repList: result};
-      console.log(repObject);
+      // console.log(repObject);
       res.render('index', repObject);
     }); 
 });
 
 
 function signInUser(req, res, error, user, info){
+   
   if(error) { return res.render(error); }
   if(!user) { return res.render(" not user"); }
   var userId = user.id;
@@ -31,9 +32,13 @@ function signInUser(req, res, error, user, info){
 }
     // route for the user to log in using authenticate
 router.post('/user/login', function(req, res, next) {
+  console.log("I am logged in!!!!")
   passport.authenticate('local', function(error, user, info) {
+  
     signInUser(req, res, error, user, info);
+     
   })(req, res, next);
+  
 });
 
 /*route for adding new user to sign up
@@ -44,6 +49,7 @@ router.post('/user/signup', function(req, res, next){
   console.log(req.body);
   passport.authenticate('local-signup', function(error, user, info) {
     // signInUser(req, res, error, user, info);
+    console.log("Created New USer!!")
   })(req, res, next);
   res.redirect('/index');
 });
@@ -64,6 +70,7 @@ router.post('/user/create', function(req, res) {
     email: newUser.email,
     password: newUser.password
   });
+  console.log("Where are we at now!!!!")
   res.redirect('/'); 
 });;
 

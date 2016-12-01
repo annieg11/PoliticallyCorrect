@@ -33,7 +33,9 @@ module.exports = function(app){
         if(err) { return done(err); }
         if (!user) {return done(null, false, { message: 'Incorrect username.' });}
         if (!user.validPassword(password)) {return done(null, false, { message: 'Incorrect password.' });}
+        console.log("I am logged in!!!!")
         return done(null, user);
+
       });
     }
   ));
@@ -47,19 +49,19 @@ module.exports = function(app){
     passwordField: 'password'
   },
       function(req, username, password, done){
+        console.log(req.body.userName +" hereeeeee");
+        console.log(" ")
         db.User.create({
-          name: req.body.name,
+          name: req.body.userName,
           email: username,
           password: password,
           zipcode: req.body.zipcode
-        })
-        .then(function(user) {
-          user.userName = req.body.name
+        }).then(function(user) {
+          user.userName = req.body.userName
           user.zipcode = parseInt(req.body.zipcode);
           user.save();
           return done(null, user);
-        })
-        .catch(function() {
+        }).catch(function() {
           return done(null, false);
         });
       }
