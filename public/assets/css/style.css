@@ -1,14 +1,22 @@
 /* style for the landing page and app */
 
 body {
-  background-image:url('../images/ripples.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  max-height: 100%;
+  background-image: url('http://4.bp.blogspot.com/-wJN77IiuGIM/VZaO0IvsHoI/AAAAAAABP04/I_uEHFtVchQ/s1600/images-animated-gif.blogspot.com.gif'), url('../images/ripples.jpg');
+  background-position: 0px 0px,250px -250px, 0px 0px;
+  /* background-attachment: fixed; */
+  background-repeat:no-repeat,repeat;
+  /* position: relative; */
+  margin: 0, auto;
+  animation: aniMain 25s linear infinite;
+ /*  background-size: cover; */
+  /* max-height: 100%; */
+ width:100%;
+height:100%;
 }
-
+@keyframes aniMain{
+from {background-position:0px 0px, 0px 0px; }
+to {background-position:10px 600px, -1200px 0px;}
+}
 h4 {
   font-weight: bold;
   font-size: 20px;
