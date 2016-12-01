@@ -9,6 +9,11 @@ body {
   max-height: 100%;
 }
 
+h2{
+   font-size: 24px; 
+}
+
+
 h4 {
   font-weight: bold;
   font-size: 20px;
@@ -71,6 +76,7 @@ p {
   margin: 0 auto;
 }
 
+/*Panels*/
 .panel-title {
   text-align: center;
 }
@@ -115,3 +121,11 @@ p {
 #repTable {
   display:none;
 } 
+
+.repImage {
+  padding-bottom: 40px;
+}
+
+.repName {
+  padding-bottom: 30px;
+}
