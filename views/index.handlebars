@@ -1,34 +1,56 @@
 {{!-- Zipcode Search Bar --}}
 
 <div class="row">
-  <div class="col-sm-3"></div>
   <div class="col-sm-6">
-    <div class="panel panel-primary text-center">
-      <div class="panel-heading"><h4>Search NJ Zipcode Now</h4></div>
-      <div class="panel-body">
-        <form class="create-update-form">
-          <div class="form-group">
-            <label for="zipcode">ZipCode:</label>
-            <input type="text" id="zipcode" name="zipcode">
-            <button type="button" id="zipSubmit" class="btn btn-lg btn-success">Search</button>
+    <div class="panel panel-success text-center" >
+      <div class="panel-heading"> <h2>New Jersey Info</h2></div>
+        <div class="panel-body">
+          <div class="row">
+              
+            <div class="col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item">Population: 8,958,013 (11th Nationally)</li>
+                <li class="list-group-item">Admitted to Union in 1787 (3rd)</li>
+                <li class="list-group-item">Capital: Trenton</li>
+                <li class="list-group-item">Nickname: Garden State</li>
+                <li class="list-group-item"><a href='https://www.govtrack.us/congress/members/NJ' target="_blank"><i class="fa fa-university" aria-hidden="true"></i> NJ Congress Members </a></li>
+                <li class="list-group-item"><a href='http://nj.gov/' target="_blank"><i class="fa fa-university" aria-hidden="true"></i> Official NJ Website  </a></li>
+              </ul>
+            </div>
           </div>
-        </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="col-sm-12">
+      <img class="bannerImg" src='./assets/images/newjersey.jpg' alt='Representative'>
+    </div>
+    <div class="col-sm-12">
+      <div class="panel panel-primary search text-center">
+        <div class="panel-heading"><h2>Find Representative Now</h2></div>
+        <div class="panel-body">
+          <form class="create-update-form">
+            <div class="form-group">
+              <label for="zipcode">ZipCode:</label>
+              <input type="text" id="zipcode" name="zipcode">
+              <button type="button" id="zipSubmit" class="btn btn-lg btn-success">Search</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-3"></div>
+
 </div>
 
 
 
 <div class="row" id ="repTable">
-  <div class="col-sm-2"></div>
-  <div class="col-sm-8">
-
+  <div class="col-sm-12">
     <div class="panel panel-primary text-center" >
       <div class="panel-heading"><h3><i class="fa fa-star" aria-hidden="true"></i> Your Representative <i class="fa fa-star" aria-hidden="true"></i></h3></div>
         <div class="panel-body">
-
           <div class="row1">
             <div class="col-sm-12 repName"></div>
             <div class="col-sm-12"></div>
@@ -45,8 +67,7 @@
               </div>
             </div>
           </div>
-
+        </div>
     </div>
   </div>
-  <div class="col-sm-2"></div>
 </div>
