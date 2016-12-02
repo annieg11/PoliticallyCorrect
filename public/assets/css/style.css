@@ -1,22 +1,5 @@
 /* style for the landing page and app */
 
-body {
-  background-image:  url('../images/ripples.jpg');
-  /* background-attachment: fixed; */
-  background-repeat: repeat;
-  /* position: relative; */
-  margin: 0, auto;
-  animation: aniMain 25s linear infinite;
-  /*  background-size: cover; */
-  /* max-height: 100%; */
-  width:100%;
-  height:100%;
-}
-@keyframes aniMain{
-from {background-position: 0px 0px; }
-to {background-position: -1200px 0px;}
-}
-
 h2{
    font-size: 24px; 
 }
@@ -142,8 +125,8 @@ h4{
 
 /*Banner image*/
 .bannerImg {
-  width: 490px;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   padding-bottom: 30px;
 }
 
@@ -151,3 +134,7 @@ h4{
   text-align: center;
 }
 
+.jersey {
+  width: 480px;
+  height: 190px;
+}
