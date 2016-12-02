@@ -6,7 +6,8 @@ module.exports = function(sequelize, DataTypes) {
     districtNum: DataTypes.INTEGER,
     phoneNum: DataTypes.STRING,
     url: DataTypes.STRING,
-    image:DataTypes.STRING
+    image:DataTypes.STRING,
+    urlTweets:DataTypes.STRING
   },{
       timestamps: false
   }, {

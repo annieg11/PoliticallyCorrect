@@ -1,18 +1,18 @@
 SELECT * from PoliticallyCorrect_db;
 
-INSERT INTO Representatives(name,party,districtNum,phoneNum,url,image)
-VALUES ("Donald Norcross","Democrat",1,"8564277000","https://norcross.house.gov","donaldnor.jpg"),
-        ("Frank LoBiondo"," Republican",2,"2022256572","http://lobiondo.house.gov","franklobiondo.jpg"),
-        ("Tom MacArthur","Republican",3,"2022254765","https://macarthur.house.gov", "tommacarthur.jpg"),
-        (" Christopher “Chris” Smith","Republican",4,"6095857878","http://chrissmith.house.gov", "christophersmith.jpg"),
-        ("Scott Garrett","Republican",5,"9733002000","http://garrett.house.gov", "scottgarrett.jpg"),
-        ("Frank Pallone Jr.","Democrat",6,"7322498892","https://pallone.house.gov", "frankpallonejr.jpg"),
-        ("Leonard Lance","Republican",7,"9087886900","http://lance.house.gov", "lanceleonard.jpg"),
-        ("Albio Sires","Democrat",8,"2013090301","http://sires.house.gov", "albiosires.jpg"),
-        ("Bill Pascrell Jr.","Democrat",9,"2019352248","http://pascrell.house.gov", "billpascrelljr.jpg"),
-        ("Donald Payne Jr.","Democrat",10,"2013690392","http://payne.house.gov", "donaldpaynejr.jpg"),
-        ("Rodney Frelinghuysen","Republican",11,"9739840711","https://frelinghuysen.house.gov", "rodneyfrelinghuysen.jpg"),
-        ("Bonnie Watson Coleman","Democrat",12,"6098830026","https://watsoncoleman.house.gov", "bonniewatsoncoleman.jpg")
+INSERT INTO Representatives(name,party,districtNum,phoneNum,url,image,urlTweets)
+VALUES ("Donald Norcross","Democrat",1,"8564277000","https://norcross.house.gov","donaldnor.jpg","https://twitter.com/@DonaldNorcross"),
+        ("Frank LoBiondo"," Republican",2,"2022256572","http://lobiondo.house.gov","franklobiondo.jpg","https://twitter.com/RepLoBiondo"),
+        ("Tom MacArthur","Republican",3,"2022254765","https://macarthur.house.gov", "tommacarthur.jpg","https://twitter.com/RepTomMacArthur"),
+        (" Christopher “Chris” Smith","Republican",4,"6095857878","http://chrissmith.house.gov", "christophersmith.jpg","https://twitter.com/RepChrisSmith"),
+        ("Scott Garrett","Republican",5,"9733002000","http://garrett.house.gov", "scottgarrett.jpg","https://twitter.com/repgarrett"),
+        ("Frank Pallone Jr.","Democrat",6,"7322498892","https://pallone.house.gov", "frankpallonejr.jpg","https://twitter.com/frankpallone"),
+        ("Leonard Lance","Republican",7,"9087886900","http://lance.house.gov", "lanceleonard.jpg","https://twitter.com/RepLanceNJ7"),
+        ("Albio Sires","Democrat",8,"2013090301","http://sires.house.gov", "albiosires.jpg","https://twitter.com/RepSires"),
+        ("Bill Pascrell Jr.","Democrat",9,"2019352248","http://pascrell.house.gov", "billpascrelljr.jpg","https://twitter.com/billpascrell"),
+        ("Donald Payne Jr.","Democrat",10,"2013690392","http://payne.house.gov", "donaldpaynejr.jpg"," https://twitter.com/RepDonaldPayne"),
+        ("Rodney Frelinghuysen","Republican",11,"9739840711","https://frelinghuysen.house.gov", "rodneyfrelinghuysen.jpg","https://twitter.com/USRepRodney"),
+        ("Bonnie Watson Coleman","Democrat",12,"6098830026","https://watsoncoleman.house.gov", "bonniewatsoncoleman.jpg","https://twitter.com/RepBonnie")
 
 
 

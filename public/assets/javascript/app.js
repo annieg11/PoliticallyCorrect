@@ -34,6 +34,8 @@ $('#zipSubmit').on('click keypress', function() {
       $('.districtNum').html('District Number: ' + response.districtNum);
       $('.phoneNum').html('<i class="fa fa-phone-square" aria-hidden="true"></i>' + '  Phone Number: ' + response.phoneNum);
       $('.website').attr('href', response.url).html('<i class="fa fa-info" aria-hidden="true"></i>     Website');
+      $('.tweets').attr('href', response.urlTweets).html('<i class="fa fa-twitter" aria-hidden="true"></i>    Twitter');
+      
        console.log(response.url);
     })
   }
