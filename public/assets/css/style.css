@@ -13,8 +13,8 @@ body {
   height:100%;
 }
 @keyframes aniMain{
-from {background-position:0px 0px, 0px 0px; }
-to {background-position:10px 600px, -1200px 0px;}
+from {background-position: 0px 0px; }
+to {background-position: -1200px 0px;}
 }
 
 h2{
@@ -102,6 +102,7 @@ p {
 /*Modal Styling*/
 .modalHeader {
   text-align: center;
+  font-size: 24px
 }
 .modalBody {
 
