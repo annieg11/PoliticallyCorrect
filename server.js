@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
 var path = require('path');
+var expressValidator = require('express-validator');
 require('dotenv').config();
 
 
@@ -29,13 +30,32 @@ app.use(bodyParser.json());
 // passport & cookie encryption config 
 require('./config/passport')(app);
 app.use(cookieParser("Iamsecret"));
+
 app.use(session({
   secret: "Iamsecret",
-  resave: false,
+  resave: true,
   saveUninitialized: true
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+// Express Validator
+app.use(expressValidator({
+  errorFormatter: function(param, msg, value) {
+      var namespace = param.split('.')
+      , root    = namespace.shift()
+      , formParam = root;
+
+    while(namespace.length) {
+      formParam += '[' + namespace.shift() + ']';
+    }
+    return {
+      param : formParam,
+      msg   : msg,
+      value : value
+    };
+  }
+}));
 
 // method override 
 app.use(methodOverride('_method'));
