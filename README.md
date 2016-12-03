@@ -4,6 +4,8 @@ Easy access to information regarding all local and state representatives. App al
 
 ## Screenshots 
 
+#### Landing Page
+![Book Shelf](public/assets/images/LandingPage.png)
 
 
 ## Technologies used
