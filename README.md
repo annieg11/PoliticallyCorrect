@@ -44,12 +44,7 @@ heroku link: https://politicallycorrect.herokuapp.com/
 
 ### Prerequisities
 
-```
-- Clone the Github repo down onto local machine. Open up the directory in which the repo was cloned into, and do an npm install. The package.json should install all of the npm packages that are dependencies. Once those packages are installed you can copy the db directory schema.sql file and create a database in mySQL workbench by pasting it and running it. After that you can go to the seeders directory and the the same with the seeds.sql file. You can now run node server.js in your terminal or GitBash and go to a browser and type "localhost:3000". You are now ready to use the PoliticallyCorrect app.
-
-```
-
-
+ Clone the Github repo down onto local machine. Open up the directory in which the repo was cloned into, and do an npm install. The package.json should install all of the npm packages that are dependencies. Once those packages are installed you can copy the db directory schema.sql file and create a database in mySQL workbench by pasting it and running it. After that you can go to the seeders directory and the the same with the seeds.sql file. You can now run node server.js in your terminal or GitBash and go to a browser and type "localhost:3000". You are now ready to use the PoliticallyCorrect app.
 
 ## Built With
 
