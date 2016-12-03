@@ -7,8 +7,6 @@ body {
   background-image: url('../images/flag1.jpg');
   background-position: 0px 0px;
   animation: animatedBackground 40s linear infinite;
-  background-repeat: repeat-x;
-  background-size: contain;
 }
 
 @keyframes animatedBackground {
@@ -16,9 +14,6 @@ body {
   to { background-position: 100% 0; }
 }
 
-html{
-  height: 100%;
-}
 
 .fadeIn {
   animation-name: fadeIn;
