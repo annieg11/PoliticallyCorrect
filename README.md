@@ -11,10 +11,10 @@ Easy access to information regarding all local and state representatives. App al
 ![Representative](public/assets/images/Representative.png)
 
 #### Sign Up
-![Sign Up](public/assets/images/signup.png)
+![Sign Up](public/assets/images/Signup.png)
 
 #### Contact Modal
-![Contact Modal](public/assets/images/contact.png)
+![Contact Modal](public/assets/images/Contact.png)
 
 
 ## Technologies used
