@@ -5,7 +5,16 @@ Easy access to information regarding all local and state representatives. App al
 ## Screenshots 
 
 #### Landing Page
-![Book Shelf](public/assets/images/LandingPage.png)
+![Landing Page](public/assets/images/LandingPage.png)
+
+#### Representative Info
+![Representative](public/assets/images/Representative.png)
+
+#### Sign Up
+![Sign Up](public/assets/images/signup.png)
+
+#### Contact Modal
+![Contact Modal](public/assets/images/contact.png)
 
 
 ## Technologies used
