@@ -112,8 +112,7 @@ router.post('/user/create', function(req, res) {
 }
 });;
 
-
-
+// Get route for Representative
 router.get('/:zipCode', function(req,res){
   var zip = req.params.zipCode;
   console.log(zip + "hereeeeee")
@@ -124,18 +123,10 @@ router.get('/:zipCode', function(req,res){
     .then(function(response){
       res.json(response)
     })
-    // res.json(rep)
   })
 })
 
-// router.get('/rep/:zipcode', function(req,res) {
-//   Representative.findAll({})
-//     .then(function(result){
-//       var repObject = {repList: result};
-//       console.log(repObject);
-//       res.render('index', repObject);
-//     }); 
-// });
+
 
   
 module.exports = router; 
