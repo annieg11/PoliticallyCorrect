@@ -5,6 +5,8 @@ body {
   width: 100%; 
   height: 100%; 
   background-image: url('../images/flag1.jpg');
+ /* background-repeat: no-repeat;*/
+  background-size: cover;
   background-position: 0px 0px;
   animation: animatedBackground 40s linear infinite;
 }
